@@ -31,7 +31,7 @@ if __name__ == '__main__':
         # my={"Data":[{"Message":"今日已签到，您已连续签到4次,明天再来吧"}],"ErrorCode":"","ResultMsg":"您今日已签到，明天再来吧","ResultCode":0}
         for _ in range(3):
             if laopo.get('Data')[0].get('Message').split(',')[0].strip() == "签到成功":
-                print('老婆仔响%s签左' % datetime.datetime.now().strftime('%y-%m-%d %H:%M:%S'), end=' ')
+                print('lp响%s签左' % datetime.datetime.now().strftime('%y-%m-%d %H:%M:%S'), end=' ')
                 break
             elif laopo.get('ResultMsg') == "您今日已签到，明天再来吧":
                 break
